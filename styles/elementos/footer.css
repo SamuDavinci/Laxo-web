@@ -1,0 +1,98 @@
+footer {
+    background: rgb(13,110,148);
+    background: linear-gradient(180deg, rgba(13,110,148,0) 0%, rgba(42,172,224,1) 96%);
+}
+
+footer a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+footer .top, footer .bottom {
+    position: relative;
+}
+
+footer .top {
+    height: 170px;
+    position: relative;
+}
+
+footer .top::after {
+    content: '';
+    width: 95%;
+    height: 3px;
+    border-radius: 6px;
+    background-color: var(--blanco);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .top div, footer .bottom nav, footer .bottom nav ul li, footer .bottom .social {
+    display: inline-block;
+}
+
+footer .top div {
+    position: absolute;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+footer .top div:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .top div:first-of-type {
+    left: 80px;
+}
+
+footer .top div:last-of-type {
+    right: 80px;
+} 
+
+footer .top div:first-of-type, footer .top div:last-of-type {
+    bottom: 25px;
+}
+
+footer .top div a img {
+    width: 200px;
+}
+
+footer .bottom {
+    margin-top: 20px;
+    position: relative;
+    height: 60px;
+}
+
+footer .bottom nav, footer .bottom .social {
+    position: absolute;
+}
+
+footer .bottom nav {
+    left: 80px;
+    top: 10px;
+}
+
+footer .bottom nav ul li {
+    margin-right: 5px;
+}
+
+footer .bottom nav ul li a {
+    transition: color .2s;
+}
+
+footer .bottom nav ul li a:hover {
+    color: var(--naranja);
+}
+
+footer .bottom .social {
+    right: 80px;
+}
+
+footer .bottom .social a img {
+    height: 40px;
+    margin-left: 20px;
+}
