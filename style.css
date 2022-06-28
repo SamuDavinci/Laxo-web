@@ -12,6 +12,7 @@
     --azul-mar: #0D6E94;
     --naranja: #DDBF0E;
     --rojo: #E31B42;
+    --rojo-hover: #a3122f;
     --blanco: #FFFFFF;
 }
 
@@ -57,7 +58,449 @@ body, html {
     left: 0;
 }
 
+strong {
+    color: var(--naranja);
+}
+
+/* Inicio header */
+header {
+    width: 100%;
+    padding: 10px 20px 0 20px;
+    position: fixed;
+    z-index: 100000;
+    background-color: var(--celeste);
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo a h1 {
+    width: 120px;
+    height: 80px;
+    background: url(../../assets/isologolaxo.svg) no-repeat;
+    background-size: contain;
+    text-indent: -100px;
+    overflow: hidden;
+}
+
+.navHeader {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.navHeader ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navHeader ul li:last-of-type {
+    margin-right: 0;
+}
+
+.navHeader ul li a {
+    text-decoration: none;
+    color: var(--azul-mar);
+    transition: color .3s;
+}
+
+.navHeader ul li a:hover {
+    color: var(--naranja);
+}
+/* Fin header */
 
 
+/* inicio Seccion Inicio */
+.inicio {
+    height: 880px;
+    position: relative;
+}
+
+.inicio .textoInicio {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+.inicio .guacamaya {
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+
+.textoInicio img {
+    width: 15px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textoInicio p, .textoInicio h1 {
+    color: var(--blanco);
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.textoInicio h1 {    
+    margin-bottom: 100px;
+}
+
+.textoInicio p {
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.textoInicio span, .textoInicio b {
+    color: var(--naranja);
+}
+/* fin Seccion Inicio */
 
 
+/* inicio quienes somos */
+.contenedor img {
+    width: 500px;
+    margin-left: 10px;
+}
+
+.contenedor p {
+    display: inline-block;
+    width: 650px;
+    vertical-align: top;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--blanco);
+}
+/* fin quienes somos */
+
+
+/* inicio que hacemos */
+.caja .bloque {
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.caja .bloque:last-of-type {
+    margin-bottom: 0;
+}
+
+.caja .bloque .img {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.caja .bloque .img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.caja .bloque .img img[alt='Relax foto'] {
+    width: 700px;
+}
+
+.caja .bloque .img img[alt='Alimentando animales'] {
+    width: 700px;
+    object-position: 0 -130px;
+}
+
+.caja .bloque p {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    margin-top: 75px;
+    padding-right: 30px;
+}
+
+.pMedio {
+    padding-right: 0;
+    padding-left: 70px;
+}
+/* fin que hacemos */
+
+
+/* incio experiencias */
+.carrusel {
+    height: 660px;
+    position: relative;
+}
+
+.tarjeta {
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    top: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tarjeta:first-of-type {
+    background-image: url(../../assets/bosque.jpg);
+    background-repeat: no-repeat;
+    background-size: 750px;
+    background-position: -100px 0;
+    left: 0;
+}
+
+.tarjeta:nth-child(2) {
+    background-image: url(../../assets/amazonas.jpg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: -180px 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tarjeta:last-of-type {
+    background-image: url(../../assets/playa.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: -50px -300px;
+    right: 0;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: rgb(13,110,148);
+background: linear-gradient(180deg, rgba(13,110,148,0) 0%, rgba(255,255,255,1) 23%);
+}
+
+.info p, .info button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info p {
+    top: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.info button {
+    top: 130px;
+    border: 0;
+    outline: 0;
+    padding: 10px 35px;
+    margin: 0 auto;
+    color: var(--blanco);
+    background-color: var(--rojo);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.info button:hover {
+    background-color: var(--rojo-hover);
+}
+
+.controlador {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.controlador img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 17px;
+    cursor: pointer;
+}
+
+.controlador img:first-of-type {
+    right: 30px;
+}
+/* fin experiencias */
+
+
+/* inicio contactanos */
+.contactanos{
+    width: 100%;
+    height: 440px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form > * {
+    display: block;
+}
+
+form label {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
+form input, form textarea {
+    color: var(--blanco);
+}
+
+form input, form textarea, form button {
+    background: transparent;
+    border: none;
+    outline: 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 2px solid var(--rojo);
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    padding-top: 5px;
+}
+
+form button {
+    margin: 30px auto 0 auto;
+    width: 50%;
+    padding: 18px 0;
+    font-weight: 500;
+    color: var(--blanco);
+    cursor: pointer;
+    border-radius: 33px;
+    font-size: 1.2rem;
+    background-color: var(--rojo);
+
+    transition: background .3s, border-color .3s;
+}
+
+form button:hover {
+    background-color: var(--rojo-hover);
+    border-color: var(--rojo-hover);
+}
+/* fin contactanos */
+
+
+/* inicio footer */
+footer {
+    background: rgb(13,110,148);
+    background: linear-gradient(180deg, rgba(13,110,148,0) 0%, rgba(42,172,224,1) 96%);
+}
+
+footer a {
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+footer .top, footer .bottom {
+    position: relative;
+}
+
+footer .top {
+    height: 170px;
+    position: relative;
+}
+
+footer .top::after {
+    content: '';
+    width: 95%;
+    height: 3px;
+    border-radius: 6px;
+    background-color: var(--blanco);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .top div, footer .bottom nav, footer .bottom nav ul li, footer .bottom .social {
+    display: inline-block;
+}
+
+footer .top div {
+    position: absolute;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+footer .top div:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .top div:first-of-type {
+    left: 80px;
+}
+
+footer .top div:last-of-type {
+    right: 80px;
+} 
+
+footer .top div:first-of-type, footer .top div:last-of-type {
+    bottom: 25px;
+}
+
+footer .top div a img {
+    width: 200px;
+}
+
+footer .bottom {
+    margin-top: 20px;
+    position: relative;
+    height: 60px;
+}
+
+footer .bottom nav, footer .bottom .social {
+    position: absolute;
+}
+
+footer .bottom nav {
+    left: 80px;
+    top: 10px;
+}
+
+footer .bottom nav ul li {
+    margin-right: 5px;
+}
+
+footer .bottom nav ul li a {
+    transition: color .2s;
+}
+
+footer .bottom nav ul li a:hover {
+    color: var(--naranja);
+}
+
+footer .bottom .social {
+    right: 80px;
+}
+
+footer .bottom .social a img {
+    height: 40px;
+    margin-left: 20px;
+}
+/* fin footer */
