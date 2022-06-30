@@ -203,18 +203,10 @@ header {
 }
 
 .caja .bloque .img img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-}
-
-.caja .bloque .img img[alt='Relax foto'] {
-    width: 700px;
+    object-position: 0 -60px;
 }
 
 .caja .bloque .img img[alt='Alimentando animales'] {
-    width: 700px;
     object-position: 0 -130px;
 }
 
@@ -254,7 +246,6 @@ header {
 .tarjeta:first-of-type {
     background-image: url(../../assets/bosque.jpg);
     background-repeat: no-repeat;
-    background-size: 750px;
     background-position: -100px 0;
     left: 0;
 }
@@ -262,7 +253,6 @@ header {
 .tarjeta:nth-child(2) {
     background-image: url(../../assets/amazonas.jpg);
     background-repeat: no-repeat;
-    background-size: 800px;
     background-position: -180px 0;
     left: 50%;
     transform: translateX(-50%);
@@ -271,7 +261,6 @@ header {
 .tarjeta:last-of-type {
     background-image: url(../../assets/playa.jpg);
     background-repeat: no-repeat;
-    background-size: 600px;
     background-position: -50px -300px;
     right: 0;
 }
@@ -282,7 +271,7 @@ header {
     width: 100%;
     height: 200px;
     background: rgb(13,110,148);
-background: linear-gradient(180deg, rgba(13,110,148,0) 0%, rgba(255,255,255,1) 23%);
+    background: linear-gradient(180deg, rgba(13,110,148,0) 0%, rgba(255,255,255,1) 23%);
 }
 
 .info p, .info button {
