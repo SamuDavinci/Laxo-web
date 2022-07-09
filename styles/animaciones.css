@@ -10,6 +10,49 @@
     }
 }
 
+@keyframes apuntarabajo {
+    0%, 10%, 20%, 30%, 40%, 50%, 60% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes temblar {
+    0% {
+        transform: rotate(0);
+    }
+    5% {
+        transform: rotate(25deg);
+    }
+    10% {
+        transform: rotate(-25deg);
+    }
+    15% {
+        transform: rotate(10deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    25% {
+        transform: rotate(0);
+    }
+}
+
 .flotar {
     animation: flotar 3.5s ease-in-out infinite;
+}
+
+.apuntarAbajo {
+    animation: apuntarabajo 3s ease-out infinite;
 }

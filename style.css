@@ -492,4 +492,8 @@ footer .bottom .social a img {
     height: 40px;
     margin-left: 20px;
 }
+
+footer .bottom .social a img:hover {
+    animation: temblar 1.5s ease-out 1;
+}
 /* fin footer */
