@@ -486,12 +486,20 @@ footer .bottom nav {
     top: 10px;
 }
 
-footer .bottom nav ul li {
-    margin-right: 5px;
-}
-
 footer .bottom nav ul li a {
     transition: color .2s;
+    border-right: 2px solid var(--blanco);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+footer .bottom nav ul li:first-of-type a {
+    padding-left: 0;
+}
+
+footer .bottom nav ul li:last-of-type a {
+    border-right: none;
+    padding-right: 0;
 }
 
 footer .bottom nav ul li a:hover {
